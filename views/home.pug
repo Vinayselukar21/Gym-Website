@@ -1,0 +1,104 @@
+extends base.pug
+block scripts
+    script
+        include ../static/flickety.js
+block style 
+    style
+        include ../static/index.css
+        include ../static/w3schools.css
+        include ../static/flickety.css
+        include ../static/bootstrap.css
+        //- integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        //- crossorigin="anonymous" 
+
+block content 
+    div.main
+        section.nav
+            div.sec-child
+                h1 MAX Fitness
+                h2 Eat Sleep Workout Repeat
+        section.sec1
+            div.container-1
+                div.div1.div1.w3-container
+                    // <img width="100%" src="./static/images/barbell.png" alt="">
+                    div.slogan.w3-animate-left
+                        p.white Strong
+                        p.red Body
+                        p.white Strong
+                        p.red Mind
+                        h2#CJU Come Join Us
+                        h3#dis Exclusive workout with modern Scientific Approach to get best best of You!
+                div.divn.w3-animate-right.carousal
+                    div.carousel-img(data-flickity='{ "autoPlay": true }')
+                        div.carousel-cell-img
+                            img.d-block(src='./static/images/1.jpg' alt='First slide')
+                        div.carousel-cell-img
+                            img.d-block(src='./static/images/2.jpg' alt='Second slide')
+                        div.carousel-cell-img
+                            img.d-block(src='./static/images/3.jpg' alt='Third slide')
+                        div.carousel-cell-img
+                            img.d-block(src='./static/images/4.jpg' alt='Fourth slide')
+                        div.carousel-cell-img
+                            img.d-block(src='./static/images/5.jpg' alt='Fifth slide')
+                        div.carousel-cell-img
+                            img.d-block(src='./static/images/6.jpg' alt='Sixth slide')
+                        div.carousel-cell-img
+                            img.d-block(src='./static/images/7.jpg' alt='Seventh slide')
+        section.sec2
+            div.flickety
+                h1 Home Workout Videos
+                div.carousel(data-flickity='{ "autoPlay": true }')
+                    div.carousel-cell
+                        iframe(src='https://www.youtube.com/embed/ml6cT4AZdqI' title='YouTube video player' frameborder='0'     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'    allowfullscreen='')
+                    div.carousel-cell
+                        iframe(src='https://www.youtube.com/embed/kYUMGjubpQg' title='YouTube video player' frameborder='0'     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'    allowfullscreen='')
+                        // <iframe src="https://www.youtube.com/embed/oAPCPjnU1wA" title="YouTube video player"     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;    picture-in-picture" allowfullscreen></iframe>
+                    div.carousel-cell
+                        iframe(src='https://www.youtube.com/embed/dJlFmxiL11s' title='YouTube video player' frameborder='0'     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'    allowfullscreen='')
+                    div.carousel-cell
+                        iframe(src='https://www.youtube.com/embed/rLOaX9pp7xM' title='YouTube video player' frameborder='0'     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'    allowfullscreen='')
+                    div.carousel-cell
+                        iframe(src='https://www.youtube.com/embed/n69-eVLtevc' title='YouTube video player' frameborder='0'     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'    allowfullscreen='')
+        section
+            div.container-2
+                h1.emp   Exclusive Membership Plans
+                div.flex-box
+                    div.div2
+                        div.cbox
+                            div.box1
+                                h1 Regular Plan
+                                h2 999 
+                                    sub /- Month
+                            div.libox
+                                ul
+                                    li Gym Access
+                                    li General Trainer
+                    div.div2
+                        div.cbox
+                            div.box1
+                                h1 Combo Plan
+                                h2 1999
+                                    sub /- Month
+                            div.libox
+                                ul
+                                    li Gym Access
+                                    li Cardio Access
+                                    li General Trainer
+                    div.div2
+                        div.cbox
+                            div.box1
+                                h1 Special Plan
+                                h2 2999
+                                    sub /- Month
+                            div.libox
+                                ul
+                                    li All Day Access
+                                    li Gym Access
+                                    li Cardio Access
+                                    li Personal Trainer
+                                    li Dietitian Advise
+
+//-   script(src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js")        
+//-   script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")        
+//-   script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")        
+//-   script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous")        

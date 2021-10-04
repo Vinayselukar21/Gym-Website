@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title MAX GYM
+    block style
+  body
+    nav#navbar
+        ul 
+            div#logo
+                img(src="./static/images/dumlogo.png", alt="")
+                |MF
+            li #[a(href='/') Home]
+            li #[a(href='/') About Us]
+            li #[a(href='/') Services]
+            //- li #[a(href='/') Class info]
+            li #[a(href='/contact') Contact us]
+    block content
+    footer 
+        a(href="/") Copyright &copy; | MAXGYM.com | All Rights Reserved
+    block scripts

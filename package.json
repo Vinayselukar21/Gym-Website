@@ -1,0 +1,25 @@
+{
+  "name": "gymwebsite",
+  "version": "1.0.0",
+  "description": "gym website project using pug, node, mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vinayselukar21/Gym-Website.git"
+  },
+  "author": "vinay selukar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vinayselukar21/Gym-Website/issues"
+  },
+  "homepage": "https://github.com/Vinayselukar21/Gym-Website#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.0.8",
+    "pug": "^3.0.2"
+  }
+}
